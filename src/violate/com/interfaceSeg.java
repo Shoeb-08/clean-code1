@@ -5,23 +5,32 @@ public class interfaceSeg extends restaurent {
 
     }
 }
-interface vegrestaurant {
+interface rest{
+    void veg();
+    void nonveg();
+}
+/*interface vegrestaurant {
     //interface segregation
     void veg();
 }
 
 interface nonvegrestaurant {
     void nonveg();
-}
+}*/
 
-class kamat implements vegrestaurant {
+class kamat implements rest{
     @Override
     public void veg() {
         System.out.println("KAMAT--choose the items from our veg meals");
 
     }
+    @Override
+    public void nonveg() {
+        System.out.println("Kamat--we have no  non veg meals");
+
+    }
 }
-class bawarchi implements vegrestaurant,nonvegrestaurant{
+class bawarchi implements rest{
     @Override
     public void veg() {
         System.out.println("BAWARCHI--choose the items from our veg meals");

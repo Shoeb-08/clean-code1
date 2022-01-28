@@ -3,7 +3,7 @@ package violate.com;
 //import com2.*;
 //import com2.interfaceSegrigation.*;
 
-public class validation {
+public class violation {
     static void del(delivery v){
         v.onWay();
     }

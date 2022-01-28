@@ -20,7 +20,9 @@ class normalDelivery extends delivery{
 }
 class expressDelivery extends delivery{
     public void onWay(){
-        System.out.println("on way express delivery");
+
+        //System.out.println("on way express delivery");
+        throw new RuntimeException("hi");
     }
 
 }

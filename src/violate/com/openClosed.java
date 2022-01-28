@@ -5,17 +5,17 @@ public class openClosed extends foodd{
 
     }
 }
-
+/*
 interface foodType{
     public int price();
-}
-class paneer implements foodType{
+}*/
+class paneer {
     int cost;
     public int price(){
         return 150;
     }
 }
-class chicken implements foodType{
+class chicken {
     int cost;
     public int price(){
         return 250;
